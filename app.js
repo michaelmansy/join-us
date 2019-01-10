@@ -46,15 +46,13 @@ app.post("/register", function(req,res){
 
 
 // starting the server
-app.listen(8080, function(req,res){
-    console.log("server running on port 8080");
+app.listen(process.env.PORT,process.env.IP, function(){
+    console.log('Mailing List Launched!')
 });
 
 
 
-// express w faker w mysql awel 7aga
-// ejs 3shan ne3mel el html page w yeb2a fi data fel html
-// body-parser 3shan neb3at el data men el html fel register post
+
 
 
 
