@@ -11,11 +11,14 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + "/public"));
 
+// mysql://b0e9b6a595bc08:318785a3@us-cdbr-iron-east-01.cleardb.net/heroku_098628afe48ce0a?reconnect=true
+
 //mysql connection
 var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'mansy',
-    database: 'join_us'
+    host: 'us-cdbr-iron-east-01.cleardb.net',
+    user: 'b0e9b6a595bc08',
+    password: '318785a3',
+    database: 'heroku_098628afe48ce0a'
 });
 
 
